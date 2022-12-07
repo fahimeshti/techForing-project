@@ -60,7 +60,8 @@ function AddJob() {
 
     return (
         <div style={{
-            height: "100vh",
+            background: "#EFF3F6",
+            minHeight: "100vh",
             width: "100vw",
             display: "flex",
             alignItems: "center",
@@ -74,6 +75,10 @@ function AddJob() {
                             display: 'flex',
                             flexDirection: 'column',
                             alignItems: 'center',
+                            background: "#fff",
+                            p: 3,
+                            borderRadius: "10px",
+                            margin: "10px"
                         }}
                     >
 

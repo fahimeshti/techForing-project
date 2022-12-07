@@ -25,18 +25,23 @@ export default function SignIn() {
             password: data.get('password'),
         };
         try {
-            const res = await axios.post('https://tf-practical.herokuapp.com/api/login/', userData)
-            const access = res?.data;
-            const user = res?.user;
-            const newUserData = { ...access, ...user }
-            localStorage.setItem('user', JSON.stringify(newUserData));
+            // const res = await axios.post('https://tf-practical.herokuapp.com/api/login/', userData)
+            // const access = res?.data;
+            // const user = res?.user;
+            // const newUserData = { ...access, ...user }
+            // localStorage.setItem('user', JSON.stringify(newUserData));
+            localStorage.setItem('user', JSON.stringify({ access: '12345' })); // setting dummy data
             window.dispatchEvent(new Event("storage"));
             redirect("/")
         } catch (err) { console.log(err) }
     };
 
     return (
-        <div className='center-item'>
+        <div className='center-item' style={{
+            width: "100vw",
+            minHeight: "100vh",
+            background: "#EFF3F6",
+          }}>
             <ThemeProvider theme={theme}>
                 <Container component="main" maxWidth="xs">
                     <CssBaseline />
@@ -45,6 +50,9 @@ export default function SignIn() {
                             display: 'flex',
                             flexDirection: 'column',
                             alignItems: 'center',
+                            background: "#fff",
+                            p: 3,
+                            borderRadius: "10px",
                         }}
                     >
                         <Avatar sx={{ m: 1, bgcolor: 'secondary.main' }}>

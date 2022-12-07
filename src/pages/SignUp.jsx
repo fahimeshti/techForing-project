@@ -46,16 +46,22 @@ export default function SignUp() {
         setValue(newValue);
     };
     return (
-        <div className='center-item'>
+        <div className='center-item' style={{
+            width: "100vw",
+            minHeight: "100vh",
+            background: "#EFF3F6",
+          }}>
             <ThemeProvider theme={theme}>
-                <Container component="main" maxWidth="xs">
+                <Container component="main" maxWidth="xs" >
                     <CssBaseline />
                     <Box
                         sx={{
-                            marginTop: 0,
                             display: 'flex',
                             flexDirection: 'column',
                             alignItems: 'center',
+                            background: "#fff",
+                            p: 3,
+                            borderRadius: "10px",
                         }}
                     >
                         <Avatar sx={{ m: 1, bgcolor: 'secondary.main' }}>

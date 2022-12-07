@@ -3,7 +3,8 @@ import AddIcon from '@mui/icons-material/Add';
 import { Link, useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 import axios from 'axios';
-import { Alert, Grid } from "@mui/material";
+import { Alert, Grid, Typography } from "@mui/material";
+import DUMMY_DATA from '../data/jobs.json';
 
 
 function Home() {
@@ -20,24 +21,30 @@ function Home() {
 
   const getAllJobs = async () => {
     try {
-      const res = await axios.get('https://tf-practical.herokuapp.com/api/job_post/', {
-        headers: { Authorization: `Bearer ${token}` }
-      })
-      setJobs(res?.data);
+      // const res = await axios.get('https://tf-practical.herokuapp.com/api/job_post/', {
+      //   headers: { Authorization: `Bearer ${token}` }
+      // })
+      // setJobs(res?.data);
+      setJobs(DUMMY_DATA);
     } catch (err) { console.log(err) }
   };
 
   useEffect(() => {
-    token.length > 0 && getAllJobs();
+    token?.length > 0 && getAllJobs();
   }, [token])
 
   const handleDelete = async (id) => {
     try {
-      await axios.delete(`https://tf-practical.herokuapp.com/api/job_update/${id}`, {
-        headers: { Authorization: `Bearer ${token}` }
-      });
+      // await axios.delete(`https://tf-practical.herokuapp.com/api/job_update/${id}`, {
+      //   headers: { Authorization: `Bearer ${token}` }
+      // });
+      // setAlert(true);
+      // getAllJobs();
+
+      // dummy code
+      const newJobs = jobs?.filter(job => job.id !== id);
+      setJobs(newJobs);
       setAlert(true);
-      getAllJobs();
     } catch (err) { console.log(err) }
   }
 
@@ -51,13 +58,16 @@ function Home() {
       setTimeout(() => {
         setAlert(false);
       }, 2000);
-
     }
   }, [alert])
 
 
   return (
-    <div>
+    <div style={{
+      width: "100vw",
+      minHeight: "100vh",
+      background: "#EFF3F6",
+    }}>
       <div style={{
         width: "100%",
         display: "flex",
@@ -66,19 +76,7 @@ function Home() {
         padding: "20px",
       }}>
 
-        <Link to='/login'>
-          <button className="btn">
-            Login
-          </button>
-        </Link>
-
-        <Link to='/sign-up'>
-          <button className="btn">
-            SignUp
-          </button>
-        </Link>
-
-        <button className="btn" onClick={handleLogOut}>
+        <button className="btn" onClick={handleLogOut} style={{ borderRadius: "5px",border:"2px solid #000" }}>
           Logout
         </button>
 
@@ -88,7 +86,7 @@ function Home() {
         direction="row"
         justifyContent="flex-start"
         alignItems="stretch"
-        sx={{ p: 2 }}
+        sx={{ p: 3 }}
       >
         {
           jobs?.map(job =>
@@ -99,6 +97,12 @@ function Home() {
               />
             </Grid>
           )
+        }
+        {
+          !(jobs?.length > 0) &&
+          <Typography variant="h6" component="div">
+            Refresh to get the jobs back.
+          </Typography>
         }
       </Grid>
       <Link to='/add-job'>

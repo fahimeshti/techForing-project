@@ -9,8 +9,8 @@ import Typography from '@mui/material/Typography';
 
 export default function OutlinedCard({ job, handleDelete }) {
     return (
-        <Box sx={{ minWidth: 200, m: 1 }}>
-            <Card variant="outlined">
+        <Box sx={{ minWidth: 150, m: 1 }}>
+            <Card variant="outlined" sx={{ backgroundColor: "#ECEFF3", p: 1, borderRadius:"10px" }}>
                 <CardContent>
                     <Typography variant="h5" component="div">
                         {job.jobTitle}
@@ -30,7 +30,7 @@ export default function OutlinedCard({ job, handleDelete }) {
                     <Typography variant="body1">
                         Job Type: {job.jobType}
                     </Typography>
-                    <Typography sx={{ mb: 1.5 }}>
+                    <Typography noWrap sx={{ mb: 1.5 }}>
                         Job Description:{' '}
                         {job.jobDescription}
                     </Typography>

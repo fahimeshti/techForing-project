@@ -1,0 +1,92 @@
+[
+    {
+        "id": "82b949a0-761f-11ed-a1eb-0242ac120002",
+        "jobTitle": "Frontend Developer",
+        "lastDateOfApply": "12-12-2022",
+        "level": "Entry",
+        "shift": "Day",
+        "vacancies": 2,
+        "jobType": "Full time",
+        "jobDescription": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, autem quisquam architecto corrupti id praesentium itaque natus vero assumenda aliquid?"
+    },
+    {
+        "id": "82b949a0-761f-11ed-a1eb-0242ac1200020",
+        "jobTitle": "Frontend Developer",
+        "lastDateOfApply": "12-12-2022",
+        "level": "Entry",
+        "shift": "Day",
+        "vacancies": 5,
+        "jobType": "Full time",
+        "jobDescription": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, autem quisquam architecto corrupti id praesentium itaque natus vero assumenda aliquid?"
+    },
+    {
+        "id": "82b949a0-761f-11ed-a1eb-0242ac1200021",
+        "jobTitle": "Frontend Developer",
+        "lastDateOfApply": "12-12-2022",
+        "level": "Entry",
+        "shift": "Day",
+        "vacancies": 7,
+        "jobType": "Full time",
+        "jobDescription": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, autem quisquam architecto corrupti id praesentium itaque natus vero assumenda aliquid?"
+    },
+    {
+        "id": "82b949a0-761f-11ed-a1eb-0242ac1200022",
+        "jobTitle": "Frontend Developer",
+        "lastDateOfApply": "12-12-2022",
+        "level": "Entry",
+        "shift": "Day",
+        "vacancies": 7,
+        "jobType": "Full time",
+        "jobDescription": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, autem quisquam architecto corrupti id praesentium itaque natus vero assumenda aliquid?"
+    },
+    {
+        "id": "82b949a0-761f-11ed-a1eb-0242ac1200023",
+        "jobTitle": "Frontend Developer",
+        "lastDateOfApply": "12-12-2022",
+        "level": "Entry",
+        "shift": "Day",
+        "vacancies": 2,
+        "jobType": "Full time",
+        "jobDescription": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, autem quisquam architecto corrupti id praesentium itaque natus vero assumenda aliquid?"
+    },
+    {
+        "id": "82b949a0-761f-11ed-a1eb-0242ac1200024",
+        "jobTitle": "Frontend Developer",
+        "lastDateOfApply": "12-12-2022",
+        "level": "Entry",
+        "shift": "Day",
+        "vacancies": 6,
+        "jobType": "Full time",
+        "jobDescription": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, autem quisquam architecto corrupti id praesentium itaque natus vero assumenda aliquid?"
+    },
+    {
+        "id": "82b949a0-761f-11ed-a1eb-0242ac1200025",
+        "jobTitle": "Frontend Developer",
+        "lastDateOfApply": "12-12-2022",
+        "level": "Entry",
+        "shift": "Day",
+        "vacancies": 4,
+        "jobType": "Full time",
+        "jobDescription": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, autem quisquam architecto corrupti id praesentium itaque natus vero assumenda aliquid?"
+    },
+    {
+        "id": "82b949a0-761f-11ed-a1eb-0242ac1200026",
+        "jobTitle": "Frontend Developer",
+        "lastDateOfApply": "12-12-2022",
+        "level": "Entry",
+        "shift": "Day",
+        "vacancies": 9,
+        "jobType": "Full time",
+        "jobDescription": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, autem quisquam architecto corrupti id praesentium itaque natus vero assumenda aliquid?"
+    },
+    {
+        "id": "82b949a0-761f-11ed-a1eb-0242ac1200027",
+        "jobTitle": "Frontend Developer",
+        "lastDateOfApply": "12-12-2022",
+        "level": "Entry",
+        "shift": "Day",
+        "vacancies": 8,
+        "jobType": "Full time",
+        "jobDescription": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, autem quisquam architecto corrupti id praesentium itaque natus vero assumenda aliquid?"
+    }
+]
